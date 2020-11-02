@@ -25,6 +25,7 @@ def error():
 def enqueue():
     q = Queue(connection=Redis())
     result = q.enqueue(broken_function, "Error within RQ job.")
+    return "queued"
 
 if __name__ == "__main__":
     app.run()
