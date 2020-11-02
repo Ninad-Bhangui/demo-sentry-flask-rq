@@ -1,0 +1,4 @@
+flask
+sentry-sdk[flask]
+redis
+rq
